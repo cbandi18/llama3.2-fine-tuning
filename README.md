@@ -1,7 +1,7 @@
-# Fine-Tuning LLaMA 3.2 with Unsloth
+# Fine-Tuning LLaMA 3.2 with Unsloth, LoRA
 
 ## Overview
-This repository contains scripts and Jupyter notebooks for fine-tuning the LLaMA 3.2 model using Unsloth. The goal is to efficiently train and deploy a state-of-the-art language model for various NLP applications.
+This repository contains scripts and Jupyter notebooks for fine-tuning the LLaMA 3.2 model using Unsloth and Low-Rank Adaptation (LoRA). The goal is to efficiently train and deploy a state-of-the-art language model for various NLP applications.
 
 ## Features
 - Fine-tuning LLaMA 3.2 using Unsloth for optimized GPU performance.
@@ -44,6 +44,11 @@ Or run the Python script (if applicable):
 ```bash
 python fine_tune.py
 ```
+## Results & Performance
+
+- The model efficiently adapts to domain-specific tasks.
+- LoRA reduces GPU memory usage while maintaining accuracy.
+- Achieves faster fine-tuning compared to full model retraining.
 
 ## Troubleshooting
 - If you encounter `NotImplementedError: Unsloth currently only supports GPUs!`, ensure you have an NVIDIA GPU installed and CUDA properly configured.
